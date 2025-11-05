@@ -25,7 +25,7 @@ jobs:
       - name: Build Ionic app
         run: |
           npm install -g @ionic/cli
-          npx ionic build
+          npm run build
 
       - name: Sync Capacitor and build Android
         run: |

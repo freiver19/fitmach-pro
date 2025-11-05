@@ -1,1 +1,17 @@
-{"name":"fitmachpro","version":"0.0.1","private":true,"scripts":{"start":"ionic serve --open"},"dependencies":{"@capacitor/android":"^7.4.4","@capacitor/cli":"^7.4.4","@capacitor/core":"^7.4.4"},"devDependencies":{"@angular/cli":"20.3.8"}}
+{
+  "name": "fitmach-pro",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "ionic serve",
+    "build": "ionic build",
+    "android": "ionic capacitor build android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.4",
+    "@capacitor/core": "^7.4.4"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.4"
+  }
+}

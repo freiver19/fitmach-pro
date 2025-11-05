@@ -11,33 +11,27 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Clonar el repositorio
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2️⃣ Configurar Node.js (usa la versión que usa tu proyecto)
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 22
 
-      # 3️⃣ Instalar dependencias del proyecto
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      # 4️⃣ Compilar el proyecto Ionic
       - name: Build Ionic app
         run: |
           npm install -g @ionic/cli
           npx ionic build
 
-      # 5️⃣ Sincronizar Capacitor y compilar Android
       - name: Sync Capacitor and build Android
         run: |
           npx cap sync android
           cd android && ./gradlew assembleDebug
 
-      # 6️⃣ Subir el APK como artefacto descargable
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:

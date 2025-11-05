@@ -1,0 +1,1 @@
+{"name":"fitmachpro","version":"0.0.1","private":true,"scripts":{"start":"ionic serve --open"},"dependencies":{"@capacitor/android":"^7.4.4","@capacitor/cli":"^7.4.4","@capacitor/core":"^7.4.4"},"devDependencies":{"@angular/cli":"20.3.8"}}

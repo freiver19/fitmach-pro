@@ -1,0 +1,7 @@
+<ion-header><ion-toolbar><ion-title>FitMachPro</ion-title></ion-toolbar></ion-header>
+<ion-content class='ion-padding'>
+  <ion-item><ion-label position='stacked'>Correo</ion-label><ion-input [(ngModel)]='email'></ion-input></ion-item>
+  <ion-item><ion-label position='stacked'>Contraseña</ion-label><ion-input type='password' [(ngModel)]='password'></ion-input></ion-item>
+  <ion-segment [(ngModel)]='role'><ion-segment-button value='instructor'>Instructor</ion-segment-button><ion-segment-button value='empresa'>Empresa</ion-segment-button></ion-segment>
+  <ion-button expand='block' (click)='login()'>Iniciar sesión</ion-button>
+</ion-content>

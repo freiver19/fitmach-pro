@@ -1,0 +1,5 @@
+{
+  "appId": "FitMachPro",
+  "appName": "com.fitmachpro.app",
+  "webDir": "app/dist/app/browser"
+}
